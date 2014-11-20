@@ -81,6 +81,7 @@ namespace Checkpoints
 
     bool CheckBlock(int nHeight, const uint256& hash)
     {
+        return true;//no check points
         if (!GetBoolArg("-checkpoints", true))
             return true;
 
